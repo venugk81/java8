@@ -12,7 +12,7 @@ public class ReduceMethod {
     public void test(){
         List<Integer> ints = GetData.getIntegerList;
         System.out.println(ints);
-//[3, 2, 5, 6, 7, 2, 1, 49, 99, 22, 53, 65, 26, 87, 67, 78, 89, 15, 16, 42, 37]
+        //[3, 2, 5, 6, 7, 2, 1, 49, 99, 22, 53, 65, 26, 87, 67, 78, 89, 15, 16, 42, 37]
         System.out.println("Sum of all int values using sum: " +ints.stream().reduce(0, Integer::sum));
         System.out.println("Sum of all int values using lambda: " +ints.stream().reduce(0, (a,b)-> (a+b)));
         Optional<Integer> optMin =  ints.stream().reduce((o1, o2) -> o1<o2 ? o1:o2);
