@@ -36,6 +36,11 @@ public class ReduceMethod {
 //        or
         int count = ints.stream().map(d-> 1).reduce(0, (a,b)-> (a+b));
         System.out.println("count using map-reduce pattern: "+ count);
+
+        Optional<Integer> greatThan30 = GetData.getIntegerList.stream().filter(x-> x>6).findAny();
+        System.out.println(greatThan30);
+
     }
+
 
 }
